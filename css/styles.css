@@ -108,7 +108,7 @@ header .logo {
     background-image: url('https://cdn.statsroyale.com/images/cards/full/minipekka.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 28.5rem;
+    width: 30rem;
     height: 40vh;
     z-index: -5;
     transform: translate(.5rem, -10rem);
@@ -117,7 +117,7 @@ header .logo {
 
 #front .image.computer {
     background-image: url('https://cdn.statsroyale.com/images/cards/full/witch.png');
-    transform: translate(.5rem, 0rem)
+    transform: translate(.5rem, 5rem)
 }
 
 #front .attributes {
