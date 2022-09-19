@@ -1,0 +1,237 @@
+:root {
+  --dark-blue: #0e5288;
+  --light-blue: #98c5ff;
+  --yellow: #feeb63;
+  --purple: #E21BD4;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Skranji", cursive;
+}
+
+body {
+  background-image: url("https://www.pixel4k.com/wp-content/uploads/2021/03/clash-royale-clan-wars-4k_1614860779.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+}
+
+header {
+  color: var(--dark-blue);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+header h1,
+header h2 {
+    text-shadow: 2px 2px 5px var(--yellow);
+}
+
+header .logo {
+  width: 15%;
+}
+
+.container {
+  margin-top: -15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  flex: 2;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 5;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+
+.face {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
+  flex-direction: column;
+}
+
+#front {
+  position: relative;
+  transform: rotateY(180deg);
+
+}
+
+#front.player {
+    background-image: url("https://i.ibb.co/D7QKBjR/card-depositphotos-bgremover-1.png");
+}
+
+#front.computer {
+    background-image: url("https://i.ibb.co/mv5jvQV/card-v-depositphotos-bgremover.png");
+}
+
+#front.player .name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem
+}
+
+#front.computer .name {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: .1rem;
+  margin-left: 1.5rem
+}
+
+#front .image {
+    background-image: url('https://cdn.statsroyale.com/images/cards/full/minipekka.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 28.5rem;
+    height: 40vh;
+    z-index: -5;
+    transform: translate(1.5%, -12%)
+
+}
+
+#front .image.computer {
+    background-image: url('https://cdn.statsroyale.com/images/cards/full/witch.png');
+    transform: translate(2%, -8%)
+}
+
+#front .attributes {
+    transform: translate(-10%, -10%)
+
+}
+
+#front .attributes.computer {
+    /* top: 63%; */
+    transform: translate(-5%, 0%)
+
+}
+
+#front .attributes .attribute {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+#front .attributes .attribute:hover,
+#front .attributes .attribute.selected {
+    color: var(--purple);
+    box-shadow: 5px 5px 15px var(--purple);
+}
+
+#front .attributes .bar {
+    width: 100%;
+    height: 1rem;
+    border-radius: 2rem;
+    background-color: #feeb63;
+    margin-bottom: .5rem;
+}
+
+#front .attributes .bar .bar-fill {
+    width: 70%;
+    height: 1rem;
+
+    border-radius: 2rem;
+    background-color: var(--purple);
+}
+
+#front .attributes .attribute .icon {
+    width: 3rem;
+}
+
+#back.player {
+  background-image: url("https://i.ibb.co/9s2P0GN/card-f2.png");
+}
+
+#back.computer {
+  background-image: url("https://i.ibb.co/XzzvFKD/card-f.png");
+}
+
+.card .attributes .attribute .icon img {
+    width: 100%;
+}
+
+.card .attributes .attribute input[type="radio"] {
+  display: none;
+}
+
+.game-controls .control-container {
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+  border: var(--yellow) solid 3px;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 black;
+  z-index: 10;
+}
+
+.game-controls .control-container .score {
+    color: var(--light-blue);
+    font-size: 2.2rem;
+    margin: 0 .5rem;
+}
+
+.game-controls .control-container.rest-cards {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+
+}
+
+.game-controls .buttons-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.game-controls .buttons-container button {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  border: var(--yellow) solid 3px;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 black;
+
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  transition: transform .2s;
+}
+
+.game-controls .buttons-container button:disabled {
+    filter: brightness(.5);
+    pointer-events: none;
+}
+
+.game-controls .buttons-container button:hover {
+    transform: scale(1.1);
+}
+
+
+.swal2-popup {
+  font-size: 2rem !important;
+}
