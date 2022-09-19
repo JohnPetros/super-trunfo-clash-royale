@@ -18,7 +18,7 @@ Jogo super trunfo com o tema Clash Royale.
 O jogo funciona no modo singleplayer contra a máquina, começando com um baralho de 20 cartas e dividido por rodadas. Cada rodada é sorteado uma carta para cada jogador e cada carta representa um personagem de Clash Royale com seus atributos de força, defesa e agilidade com seus respectivos valores. O usuário deve escolher um dos atributos do personagem. Se o valor do atributo escolhido for maior que o do atributo escolhido pela máquina, ele pontua, senão a máquina pontua. Caso o baralho de cartas acabe, ganha o jogador que mais pontuou durante o jogo.
 <br>
 
- <h3 align="center"><a target="_blank" href="https://pokedex-php-joaopedro.herokuapp.com/index.php">Veja o jogo funcionando 👀</a></h3>
+ <h3 align="center"><a target="_blank" href="https://super-trunfo-clash-royale.netlify.app/">Veja o jogo funcionando 👀</a></h3>
 
 <br>
 
