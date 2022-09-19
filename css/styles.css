@@ -94,30 +94,30 @@ header .logo {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
-    margin-left: 0.5rem
+    margin-left: 1.5rem;
 }
 
 #front.computer .name {
   font-size: 1.8rem;
   text-transform: uppercase;
-  margin-bottom: .1rem;
-  margin-left: 1.5rem
+  margin-bottom: 5rem;
+  margin-left: 1.5rem;
 }
 
 #front .image {
     background-image: url('https://cdn.statsroyale.com/images/cards/full/minipekka.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30rem;
-    height: 40vh;
+    width: 29rem;
+    height: 45vh;
     z-index: -5;
-    transform: translate(.5rem, -5rem);
+    transform: translate(0.5rem, -4rem);
 
 }
 
 #front .image.computer {
     background-image: url('https://cdn.statsroyale.com/images/cards/full/witch.png');
-    transform: translate(.5rem, -15rem)
+    transform: translate(0.5rem, -2rem);
 }
 
 #front .attributes {
