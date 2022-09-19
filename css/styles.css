@@ -111,17 +111,17 @@ header .logo {
     width: 28.5rem;
     height: 40vh;
     z-index: -5;
-    transform: translate(1.5%, -12%)
+    transform: translate(.5rem, -4rem)
 
 }
 
 #front .image.computer {
     background-image: url('https://cdn.statsroyale.com/images/cards/full/witch.png');
-    transform: translate(2%, -8%)
+    transform: translate(.5rem, -3rem)
 }
 
 #front .attributes {
-    transform: translate(-10%, -10%)
+    transform: translate(-2rem, -2rem)
 
 }
 
