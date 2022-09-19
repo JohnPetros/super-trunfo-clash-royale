@@ -111,7 +111,7 @@ header .logo {
     width: 28.5rem;
     height: 40vh;
     z-index: -5;
-    transform: translate(.5rem, 2rem)
+    transform: translate(.5rem, 0)
 
 }
 
