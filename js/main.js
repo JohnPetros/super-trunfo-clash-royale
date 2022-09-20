@@ -197,5 +197,4 @@ const handleButtons = (event) => {
     nextRound();
   }
 };
-
 buttons.forEach((button) => button.addEventListener("click", handleButtons));
