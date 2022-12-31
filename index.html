@@ -1,116 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clash Royale</title>
-    <link rel="stylesheet" href="css/styles.css?">
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins&family=Roboto&family=Skranji&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
-     <script defer src="js/main.js"></script>
-     <script defer src="js/deck.js"></script> 
-     <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css?" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins&family=Roboto&family=Skranji&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <script defer src="js/main.js"></script>
+    <script defer src="js/deck.js"></script>
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </head>
+  <body>
     <header>
-        <img class="logo" src="assets/logo.png" alt="">
+      <img class="logo" src="assets/logo.png" alt="" />
 
-        <div>
-            <h1>Quem vence essa disputa?</h1>
-            <h2>Selecione um dos atributos</h2>
-        </div>
+      <div>
+        <h1>Quem vence essa disputa?</h1>
+        <h2>Selecione um dos atributos</h2>
+      </div>
     </header>
 
-    <!-- HTTDOCS -->
-
     <main class="container">
-        <div class="card" id="player">
-
-            <div class="face player" id="front">
-                <h3 class="name player">Gigante do Gelo</h3>
-                <div class="image player"></div>
-                <form action="" class="attributes player">
-                    <label for="strength" class="attribute">
-                        <div class="icon"><img src="https://pngimage.net/wp-content/uploads/2018/06/sword-icon-png-7.png" alt=""></div>
-                        Força: <span class="player attribute-value strength-value">20</span>
-                        <input type="radio" name="attribute" id="strength">
-                    </label>
-                    <div class="player bar strength-bar">
-                        <div class="bar-fill"></div>
-                    </div>
-                    <label for="defense" class="attribute">
-                        <div class="icon"><img src="https://freepngimg.com/thumb/shield/14-shield-png-image-picture-download-thumb.png" alt=""></div>
-                        Defesa: <span class="player attribute-value defense-value">50</span>
-                        <input type="radio" name="attribute" id="defense">
-                    </label>
-                    <div class="player bar strength-bar">
-                        <div class="bar-fill"></div>
-                    </div>
-                    <label for="magic" class="attribute">
-                        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/867/867875.png" alt=""></div>
-                        Magia: <span class="player attribute-value magic-value">100</span>
-                        <input type="radio" name="attribute" id="magic">
-                    </label>
-                    <div class="player bar strength-bar">
-                        <div class="bar-fill"></div>
-                    </div>
-                </form>
+      <div class="card" id="player">
+        <div class="face player" id="front">
+          <h3 class="name player">Gigante do Gelo</h3>
+          <div class="image player"></div>
+          <form action="" class="attributes player">
+            <label for="strength" class="attribute">
+              <div class="icon">
+                <img
+                  src="https://pngimage.net/wp-content/uploads/2018/06/sword-icon-png-7.png"
+                  alt=""
+                />
+              </div>
+              Força:
+              <span class="player attribute-value strength-value">20</span>
+              <input type="radio" name="attribute" id="strength" />
+            </label>
+            <div class="player bar strength-bar">
+              <div class="bar-fill"></div>
             </div>
-            
-            <div class="face player" id="back"></div>
-
-        </div>
-        
-
-        <div class="game-controls">
-            <div class="score control-container">
-                <p>Jogador <span class="player score">0</span> VS <span class="computer score">0</span> Computador</p>
+            <label for="defense" class="attribute">
+              <div class="icon">
+                <img
+                  src="https://freepngimg.com/thumb/shield/14-shield-png-image-picture-download-thumb.png"
+                  alt=""
+                />
+              </div>
+              Defesa:
+              <span class="player attribute-value defense-value">50</span>
+              <input type="radio" name="attribute" id="defense" />
+            </label>
+            <div class="player bar strength-bar">
+              <div class="bar-fill"></div>
             </div>
-            <div class="rest-cards control-container">
-                <p>Quantidade de cartas restantes: <span id="cards-quantity">20</span></p>
+            <label for="magic" class="attribute">
+              <div class="icon">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/867/867875.png"
+                  alt=""
+                />
+              </div>
+              Magia: 
+              <span class="player attribute-value magic-value">100</span>
+              <input type="radio" name="attribute" id="magic" />
+            </label>
+            <div class="player bar strength-bar">
+              <div class="bar-fill"></div>
             </div>
-
-            <div class="buttons-container">
-                <button id="draw-card">Sortear Carta</button>
-                <button disabled id="play">Jogar</button>
-                <button disabled id="next-round">Próxima Rodada</button>
-            </div>
+          </form>
         </div>
 
-        <div class="card" id="computer">
-            <div class="face computer" id="front">
-                <h3 class="name computer">Pekka</h3>
-                <div class="image computer"></div>
-                <form action="" class="attributes computer">
-                    <label for="strength-computer" class="attribute" id="strength-computer">
-                        <div class="icon"><img src="https://pngimage.net/wp-content/uploads/2018/06/sword-icon-png-7.png" alt=""></div>
-                        Força: <span class="computer attribute-value strength-value">20</span>
-                    </label>
-                    <div class="computer bar strength-bar">
-                        <div class="bar-fill"></div>
-                    </div>
-                    <label for="defense-computer" class="attribute" id="defense-computer">
-                        <div class="icon"><img src="https://freepngimg.com/thumb/shield/14-shield-png-image-picture-download-thumb.png" alt=""></div>
-                        Defesa: <span class="computer attribute-value defense-value">50</span>
-                    </label>
-                    <div class="computer bar strength-bar">
-                        <div class="bar-fill"></div>
-                    </div>
-                    <label for="magic-computer" class="attribute" id="magic-computer">
-                        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/867/867875.png" alt=""></div>
-                        Magia: <span class="computer attribute-value magic-value">100</span>
-                    </label>
-                    <div class="computer bar strength-bar">
-                        <div class="bar-fill"></div>
-                    </div>
-                </form>
-            </div>
-            <div class="face computer" id="back"></div>
+        <div class="face player" id="back"></div>
+      </div>
+
+      <div class="game-controls">
+        <div class="score control-container">
+          <p>
+            Jogador 
+            <span class="player score">0</span> 
+            VS
+            <span class="computer score">0</span> 
+            Computador
+          </p>
         </div>
+        <div class="rest-cards control-container">
+          <p>
+            Quantidade de cartas restantes: <span id="cards-quantity">20</span>
+          </p>
+        </div>
+
+        <div class="buttons-container">
+          <button id="draw-card">Sortear Carta</button>
+          <button disabled id="play">Jogar</button>
+          <button disabled id="next-round">Próxima Rodada</button>
+        </div>
+      </div>
+
+      <div class="card" id="computer">
+        <div class="face computer" id="front">
+          <h3 class="name computer">Pekka</h3>
+          <div class="image computer"></div>
+          <form action="" class="attributes computer">
+            <label
+              for="strength-computer"
+              class="attribute"
+              id="strength-computer"
+            >
+              <div class="icon">
+                <img
+                  src="https://pngimage.net/wp-content/uploads/2018/06/sword-icon-png-7.png"
+                  alt=""
+                />
+              </div>
+              Força:
+              <span class="computer attribute-value strength-value">20</span>
+            </label>
+            <div class="computer bar strength-bar">
+              <div class="bar-fill"></div>
+            </div>
+            <label
+              for="defense-computer"
+              class="attribute"
+              id="defense-computer"
+            >
+              <div class="icon">
+                <img
+                  src="https://freepngimg.com/thumb/shield/14-shield-png-image-picture-download-thumb.png"
+                  alt=""
+                />
+              </div>
+              Defesa:
+              <span class="computer attribute-value defense-value">50</span>
+            </label>
+            <div class="computer bar strength-bar">
+              <div class="bar-fill"></div>
+            </div>
+            <label for="magic-computer" class="attribute" id="magic-computer">
+              <div class="icon">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/867/867875.png"
+                  alt=""
+                />
+              </div>
+              Magia:
+              <span class="computer attribute-value magic-value">100</span>
+            </label>
+            <div class="computer bar strength-bar">
+              <div class="bar-fill"></div>
+            </div>
+          </form>
+        </div>
+        <div class="face computer" id="back"></div>
+      </div>
     </main>
-    <audio src="https://freesound.org/data/previews/536/536782_1415754-lq.mp3" type="audio/mp3" id="flipCard"></audio>
-    <audio src="https://freesound.org/data/previews/521/521639_7724198-lq.mp3" type="audio/mp3" id="win"></audio>
-    <audio src="https://freesound.org/data/previews/362/362205_6629901-lq.mp3" type="audio/mp3" id="lose"></audio>
-</body>
+    
+    <audio
+      src="https://freesound.org/data/previews/536/536782_1415754-lq.mp3"
+      type="audio/mp3"
+      id="flipCard"
+    ></audio>
+    <audio
+      src="https://freesound.org/data/previews/521/521639_7724198-lq.mp3"
+      type="audio/mp3"
+      id="win"
+    ></audio>
+    <audio
+      src="https://freesound.org/data/previews/362/362205_6629901-lq.mp3"
+      type="audio/mp3"
+      id="lose"
+    ></audio>
+  </body>
 </html>

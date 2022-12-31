@@ -1,13 +1,12 @@
-let computerCard = 0; 
-let playerCard = 0;
-let playerScore = 0
-let computerScore = 0
-
 const buttons = document.querySelectorAll("button");
 const radios = document.querySelectorAll("input[type=radio]");
 const flipAudio = document.getElementById("flipCard")
 const winAudio = document.getElementById("win")
 const loseAudio = document.getElementById("lose")
+let computerCard = 0; 
+let playerCard = 0;
+let playerScore = 0
+let computerScore = 0
 
 const flipCard = (card) => {
   flipAudio.play();
@@ -29,7 +28,6 @@ const disableButtons = (...args) => {
 };
 
 const setCard = (cardGame, card) => {
-  console.log(card);
   const imageCard = document.querySelector(`.image.${cardGame}`);
   imageCard.style.backgroundImage = `url(${card.image})`;
   const nameCard = document.querySelector(`.name.${cardGame}`);
@@ -51,20 +49,14 @@ const updateCardsQuantity = () => {
 }
 
 const drawCard = () => {
-  console.log(deck)
   const computerCardNumber = Math.floor(Math.random() * (deck.length - 1));
   computerCard = deck[computerCardNumber];
-  console.log("computer: " + computerCard);
   deck.splice(computerCardNumber, 1);
-  console.log("qtd de cartas: " + deck.length)
-  console.log(deck)
 
 
   const playerCardNumber = Math.floor(Math.random() * (deck.length - 1));
-  console.log("player: " + playerCardNumber + " computer: " + computerCardNumber);
   playerCard = deck[playerCardNumber];
   deck.splice(playerCardNumber, 1);
-  console.log("player: " + playerCard);
 
   disableButtons(true, false, true);
   setCard("player", playerCard);

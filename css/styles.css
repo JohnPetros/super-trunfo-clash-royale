@@ -22,6 +22,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: fixed;
+  font-size: 1.6rem;
 }
 
 header {
@@ -49,25 +50,27 @@ header .logo {
 
 .card {
   flex: 2;
-  height: 100%;
+  height: 70rem;
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
   transition: all 0.5s;
   position: relative;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .flip {
   transform: rotateY(180deg);
 }
 
-
 .face {
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
-  width: 80%;
+  width: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,56 +80,60 @@ header .logo {
 }
 
 #front {
-  position: relative;
   transform: rotateY(180deg);
 
 }
 
+#front.player, #front.computer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 #front.player {
-    background-image: url("https://i.ibb.co/D7QKBjR/card-depositphotos-bgremover-1.png");
+  background-image: url("https://i.ibb.co/D7QKBjR/card-depositphotos-bgremover-1.png");
+
 }
 
 #front.computer {
     background-image: url("https://i.ibb.co/mv5jvQV/card-v-depositphotos-bgremover.png");
+    height: 98%;
+    margin-top: -2rem;
 }
 
-#front.player .name {
-    font-size: 2rem;
+#front.player .name, #front.computer .name {
+    font-size: 1.8rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
-    margin-left: 1.2rem;
-}
-
-#front.computer .name {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  margin-left: 1.2rem;
+    position: absolute;
+    top: 11%;
 }
 
 #front .image {
     background-image: url('https://cdn.statsroyale.com/images/cards/full/minipekka.png');
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    width: 29rem;
-    height: 45vh;
-    z-index: -5;
-    transform: translate(0.5rem, -4rem);
-
+    width: 66%;
+    height: 50%;
+    position: absolute;
+    top: 8rem;
+    left: 8.5rem;
 }
 
 #front .image.computer {
     background-image: url('https://cdn.statsroyale.com/images/cards/full/witch.png');
-    transform: translate(0.5rem, -2rem);
+    top: 8.5rem;
 }
 
 #front .attributes {
-    transform: translate(-2rem, -2rem)
-
+  position: absolute;
+  top: 63%;
+  left: 30%;
 }
 
 #front .attributes.computer {
-    /* top: 63%; */
-    transform: translate(-5%, 0%)
+  top: 65%;
+  left: 30%;
 
 }
 
@@ -134,7 +141,7 @@ header .logo {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
 }
 
@@ -162,6 +169,12 @@ header .logo {
 
 #front .attributes .attribute .icon {
     width: 3rem;
+}
+
+#back.player,
+#back.computer {
+  background-size: cover;
+  height: 85%;
 }
 
 #back.player {
@@ -219,6 +232,7 @@ header .logo {
   margin-top: 2rem;
   font-size: 2.2rem;
   transition: transform .2s;
+  cursor: pointer;
 }
 
 .game-controls .buttons-container button:disabled {
