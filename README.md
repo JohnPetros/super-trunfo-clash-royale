@@ -91,6 +91,27 @@ O deploy desse projeto foi realizado através do **[Github Pages](https://www.in
 
 ---
 
+## 💪 Como contribuir
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+<br>
+
+   > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+
+---
+
+## 📩 Contato
+
+Entre em contato comigo por e-mail ou pelo meu LinkedIn:
+
+<a href="mailto:joaopcarvalho.cds@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+<a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-carvalho-dos-santos-42a0ab222/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+
+---
+
 ## 🚀 Como executar o projeto
 
 Feito com 💜 by João Pedro 👋🏻
