@@ -1,5 +1,5 @@
 <h1 align="center">
- 👑 Clash Royale - Super Trunfo
+  👑 Clash Royale - Super Trunfo
 </h1>
 
 <div align="center">
