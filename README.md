@@ -115,6 +115,7 @@ Entre em contato comigo por e-mail ou pelo meu LinkedIn:
 
 ---
 
-## 🚀 Como executar o projeto
 
-Feito com 💜 by João Pedro 👋🏻
+<p align="center">
+   Feito com 💜 by João Pedro 👋🏻
+</p>
