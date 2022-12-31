@@ -1,4 +1,4 @@
-export const deck = [
+const deck = [
   {
     name: "Mini-Pekka",
     image: "https://cdn.statsroyale.com/images/cards/full/minipekka.png",

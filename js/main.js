@@ -1,5 +1,3 @@
-import { deck } from "./deck.js";
-
 let computerCard = 0; 
 let playerCard = 0;
 let playerScore = 0
