@@ -20,9 +20,6 @@
 
 <br>
 
-![Clash Royale - Google Chrome 08_10_2022 17_59_37](https://user-images.githubusercontent.com/93893533/194727678-173e961e-2c16-454d-a6cb-97631734d7f6.png)
-
-
 ## 💻 Projeto
 
 Super trunfo com o tema do jogo **[Clash Royale](https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=pt_BR&gl=US&pli=1)** da Supercell. Um jogo Super trunfo nada mais é um jogo de cartas em que cada jogador escolhe uma carta que contém um determinado valor, ganhando aquele que tiver a carta com maior valor entre as duas. <br> 
