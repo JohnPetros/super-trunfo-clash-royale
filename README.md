@@ -58,7 +58,9 @@ O jogo funciona no modo singleplayer contra o computador, começando com um bara
 Esse projeto foi desenvolvido com as seguintes tecnologias
 
 ✔️ **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**
+
 ✔️ **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
+
 ✔️ **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
 
 ---
