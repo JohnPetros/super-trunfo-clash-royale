@@ -63,6 +63,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 
 ---
 
+## 🚀 Como executar o projeto
+
 ### Pré-requesitos
 
 Embora não seja obrigatório, para rodar a aplicação de uma forma mais prática é bom ter o editor de código [VSCode](https://code.visualstudio.com/) junto com a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), que pode ser instalada no marketplace do próprio VSCode. 
@@ -70,6 +72,7 @@ Embora não seja obrigatório, para rodar a aplicação de uma forma mais práti
 #### 📟 Rodando a aplicação
 
 ```bash
+
 # Clone este repositório
 $ git clone  https://github.com/JohnPetros/super-trunfo-clash-royale.git
 
@@ -91,7 +94,7 @@ O deploy desse projeto foi realizado através do **[Github Pages](https://www.in
 
 ---
 
-## 💪 Como contribuir
+## 💪 Como contribuir com o projeto
 
 1. Faça um **fork** do projeto.
 2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
