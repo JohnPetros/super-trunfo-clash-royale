@@ -63,6 +63,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 
 ✔️ **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
 
+✔️ **[SweetAlert2](https://sweetalert2.github.io/)**
+
 ---
 
 ## 🚀 Como executar o projeto
