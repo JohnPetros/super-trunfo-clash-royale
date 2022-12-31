@@ -115,5 +115,6 @@ Entre em contato comigo por e-mail ou pelo meu LinkedIn:
 
 ---
 
-
-Feito com 💜 by João Pedro 👋🏻
+<p align="center">
+   Feito com 💜 by João Pedro 👋🏻
+</p>
