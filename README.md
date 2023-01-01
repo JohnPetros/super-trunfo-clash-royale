@@ -43,7 +43,7 @@ O jogo funciona no modo singleplayer contra o computador, começando com um bara
 
 - Como trabalhar com múltiplos arquivos JS em um único projeto
 - Como usar o objeto **[arguments](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/arguments)** do JS para manipular os argumentos passados a uma função de maneira similar a um array
-- Como gerar numéros aleátorios para método Math.random do JS
+- Como gerar numéros aleátorios usando método Math.random do JS
 - Como executar arquivo de áudio com JS
 - Como modularizar melhor o código JS para manipular o DOM através de classes e ids HTML
 - Como usar a biblioteca SweetAlert2 para criar modais customizáveis em JS
