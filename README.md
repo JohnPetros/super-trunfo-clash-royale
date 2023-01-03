@@ -2,6 +2,8 @@
    Clash Royale - Super Trunfo 👑
 </h1>
 
+<br>
+
 <div align="center">
    <a href="https://github.com/JohnPetros">
       <img alt="Made by JohnPetros" src="https://img.shields.io/badge/made%20by-JohnPetros-yellow">
