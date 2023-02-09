@@ -2,7 +2,7 @@
   --dark-blue: #0e5288;
   --light-blue: #98c5ff;
   --yellow: #feeb63;
-  --purple: #E21BD4;
+  --purple: #e21bd4;
 
   font-size: 62.5%;
 }
@@ -33,7 +33,7 @@ header {
 
 header h1,
 header h2 {
-    text-shadow: 2px 2px 5px var(--yellow);
+  text-shadow: 2px 2px 5px var(--yellow);
 }
 
 header .logo {
@@ -46,6 +46,7 @@ header .logo {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+  max-width: 120;
 }
 
 .card {
@@ -70,7 +71,7 @@ header .logo {
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
-  width: 45rem;
+  min-width: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,48 +82,44 @@ header .logo {
 
 #front {
   transform: rotateY(180deg);
-
+  background-position: cover;
+  
 }
 
-#front.player, #front.computer {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+#front.player,
+#front.computer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #front.player {
-  background-image: url("https://i.ibb.co/D7QKBjR/card-depositphotos-bgremover-1.png");
-
+  background-image: url("../assets/front-user-card.png");
 }
 
 #front.computer {
-    background-image: url("https://i.ibb.co/mv5jvQV/card-v-depositphotos-bgremover.png");
-    height: 98%;
-    margin-top: -2rem;
+  background-image: url("../assets/front-computer-card.png");
+  height: 98%;
+  margin-top: -2rem;
 }
 
-#front.player .name, #front.computer .name {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    position: absolute;
-    top: 11%;
+#front.player .name,
+#front.computer .name {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 11%;
 }
 
 #front .image {
-    background-image: url('https://cdn.statsroyale.com/images/cards/full/minipekka.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 66%;
-    height: 50%;
-    position: absolute;
-    top: 8rem;
-    left: 8.5rem;
-}
-
-#front .image.computer {
-    background-image: url('https://cdn.statsroyale.com/images/cards/full/witch.png');
-    top: 8.5rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 66%;
+  height: 50%;
+  position: absolute;
+  top: 8rem;
+  left: 8.5rem;
 }
 
 #front .attributes {
@@ -134,41 +131,41 @@ header .logo {
 #front .attributes.computer {
   top: 65%;
   left: 30%;
-
 }
 
 #front .attributes .attribute {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 2.5rem;
-    color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
 }
 
 #front .attributes .attribute:hover,
 #front .attributes .attribute.selected {
-    color: var(--purple);
-    box-shadow: 5px 5px 15px var(--purple);
+  color: var(--purple);
+  box-shadow: 5px 5px 15px var(--purple);
 }
 
 #front .attributes .bar {
-    width: 100%;
-    height: 1rem;
-    border-radius: 2rem;
-    background-color: #feeb63;
-    margin-bottom: .5rem;
+  width: 100%;
+  height: 1rem;
+  border-radius: 2rem;
+  background-color: #feeb63;
+  margin-bottom: 0.5rem;
 }
 
 #front .attributes .bar .bar-fill {
-    width: 70%;
-    height: 1rem;
+  width: 70%;
+  height: 1rem;
 
-    border-radius: 2rem;
-    background-color: var(--purple);
+  border-radius: 2rem;
+  background-color: var(--purple);
 }
 
 #front .attributes .attribute .icon {
-    width: 3rem;
+  width: 3rem;
 }
 
 #back.player,
@@ -178,15 +175,15 @@ header .logo {
 }
 
 #back.player {
-  background-image: url("https://i.ibb.co/9s2P0GN/card-f2.png");
+  background-image: url("../assets/back-user-card.png");
 }
 
 #back.computer {
-  background-image: url("https://i.ibb.co/XzzvFKD/card-f.png");
+  background-image: url("../assets/back-computer-card.png");
 }
 
 .card .attributes .attribute .icon img {
-    width: 100%;
+  width: 100%;
 }
 
 .card .attributes .attribute input[type="radio"] {
@@ -205,15 +202,14 @@ header .logo {
 }
 
 .game-controls .control-container .score {
-    color: var(--light-blue);
-    font-size: 2.2rem;
-    margin: 0 .5rem;
+  color: var(--light-blue);
+  font-size: 2.2rem;
+  margin: 0 0.5rem;
 }
 
 .game-controls .control-container.rest-cards {
   background-color: var(--light-blue);
   color: var(--dark-blue);
-
 }
 
 .game-controls .buttons-container {
@@ -231,17 +227,17 @@ header .logo {
   padding: 1rem;
   margin-top: 2rem;
   font-size: 2.2rem;
-  transition: transform .2s;
+  transition: transform 0.2s;
   cursor: pointer;
 }
 
 .game-controls .buttons-container button:disabled {
-    filter: brightness(.5);
-    pointer-events: none;
+  filter: brightness(0.5);
+  pointer-events: none;
 }
 
 .game-controls .buttons-container button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .swal2-popup {
