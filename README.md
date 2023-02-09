@@ -40,6 +40,7 @@ O jogo funciona no modo singleplayer contra o computador, começando com um bara
 </div>
 
 ---
+<br>
 
 ## 📖 Aprendizado
 
@@ -56,6 +57,7 @@ O jogo funciona no modo singleplayer contra o computador, começando com um bara
 - Como tranbalhar melhor com o background-image de elementos com CSS
 
 ---
+<br>
 
 ## 🛠️ Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias
@@ -69,6 +71,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 ✔️ **[SweetAlert2](https://sweetalert2.github.io/)**
 
 ---
+<br>
 
 ## 🚀 Como executar o projeto
 
@@ -94,12 +97,14 @@ $ code .
 ```
 
 ---
+<br>
 
 ## ⚙️ Deploy
 
 O deploy desse projeto foi realizado através do **[Github Pages](https://www.infinityfree.net/)**. Isso implica que você pode acessar o projeto funcionando acessando esse **[link](https://johnpetros.github.io/super-trunfo-clash-royale/)**
 
 ---
+<br>
 
 ## 💪 Como contribuir com o projeto
 
@@ -112,6 +117,7 @@ O deploy desse projeto foi realizado através do **[Github Pages](https://www.in
    > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
 
 ---
+<br>
 
 ## 📩 Contato
 
@@ -121,6 +127,7 @@ Entre em contato comigo por e-mail ou pelo meu LinkedIn:
 <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-carvalho-dos-santos-42a0ab222/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 
 ---
+<br>
 
 <p align="center">
    Feito com 💜 by João Pedro 👋🏻
